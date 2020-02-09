@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <meta name="description" content="Пятнашки">
+    <link href="style.css" rel="stylesheet">
+    <title>Игра "Пятнашки"</title>
+</head>
+<body>
+<div class="floater">
+<div class="main">
+    <p class="game-name">15</p>
+    <div class="header course">Ходов <br> <span id="result">0</span></div>
+    <div class="header time"> Время <br><span id="minutes">00</span>:<span id="seconds">00</span></div>
+
+    <div id="block">
+
+    </div>
+    <div id = "win-block">
+        <h3>Победа!</h3>
+        <img src="3MJH.gif" class="giphy" alt="victory">
+        <p>Ходов: <span id ="result-win"> 0 </span></p>
+        <p>Время: <span id="minutes-win">00</span>:<span id="seconds-win">00</span></p>
+        <button class = "new-game"> Новая игра </button>
+    </div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

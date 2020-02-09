@@ -26,7 +26,7 @@ function shuffle(arr) {
 }
 
 function initialize() {
-    //shuffle(myArr);
+    shuffle(myArr);
     console.log(myArr);
 
     var block = document.getElementById('block');

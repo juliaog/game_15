@@ -1,18 +1,5 @@
  body {
-     min-width: 320px;
      font-family: "Arial",sans-serif;
- }
-@media (min-device-width: 979px) {
-   body{
-        min-width: 979px;
-    }
-
-}
-
- @media (min-device-width: 320px){
-     body{
-         width:310px;
-     }
  }
      .main, .win {
          position: absolute;
@@ -22,28 +9,28 @@
          right: 0;
          margin: auto;
          background-color: #f3eee5;
-         width: 455px;
-         height: 610px;
+         width: 364px;
+         height: 488px;
          border-radius: 10px;
      }
 
      .game-name {
          float: left;
-         font-size: 80px;
-         padding: 20px 70px 0 30px;
+         font-size: 64px;
+         padding: 15px 55px 0 25px;
          font-weight: bold;
          margin: 0;
      }
 
      .header {
          display: inline-block;
-         margin: 30px 30px 40px 0;
+         margin: 24px 24px 32px 0;
          padding-top: 5px;
-         width: 90px;
-         height: 70px;
+         width: 20%;
+         height: 12%;
          background-color: #b7b7b7;
-         font-size: 20px;
-         line-height: 30px;
+         font-size: 15px;
+         line-height: 24px;
          text-align: center;
          border-radius: 5px;
          box-sizing: border-box;
@@ -54,8 +41,8 @@
          flex-wrap: wrap;
          align-items: center;
          align-content: center;
-         width: 438px;
-         height: 443px;
+         width: 96%;
+         height: 72.5%;
          background-color: #b7b7b7;
          margin: auto;
          border-radius: 10px;
@@ -68,13 +55,13 @@
          display: flex;
          align-items: inherit;
          justify-content: center;
-         font-size: 45px;
+         font-size: 36px;
          font-weight: bold;
-         width: 97px;
-         height: 97px;
+         width: 22.3%;
+         height: 22%;
          background-color: #f3eee5;
          border-radius: 7px;
-         margin: 5px;
+         margin: 4px;
          z-index: 2;
      }
 
@@ -134,13 +121,13 @@
 
      #win-block {
          display: none;
-         padding: 10px 50px 0 50px;
+         padding: 8px 40px 0 40px;
          position: absolute;
          top: 0;
          border: 13px solid #b7b7b7;
          background-color: #f3eee5;
-         width: 327px;
-         height: 573px;
+         width: 261px;
+         height: 458px;
          z-index: 3;
          font-weight: 600;
          text-align: center;
@@ -148,19 +135,19 @@
          letter-spacing: 3px;
          font-family: Georgia, serif;
          font-style: italic;
-         font-size: 30px;
+         font-size: 24px;
          color: black;
 
      }
 
      .new-game {
-         margin-top: 10px;
+         margin-top: 8px;
          display: none;
-         width: 170px;
-         height: 60px;
+         width: 134px;
+         height: 48px;
          background-color: #b7b7b7;
          color: black;
-         font-size: 22px;
+         font-size: 18px;
          font-family: Georgia, serif;
          font-weight: bold;
          box-shadow: 2px 5px 10px 0 black;
@@ -169,7 +156,13 @@
 
      .giphy {
          position: relative;
-         left: -36px;
-         width: 400px;
-         height: 200px;
+         left: -30px;
+         width: 320px;
+         height: 160px;
      }
+
+ @media (max-width : 375px){/*от 375 и ниже*/
+     .main, .win{
+
+     }
+ }

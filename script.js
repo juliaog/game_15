@@ -26,7 +26,7 @@ function shuffle(arr) {
 }
 
 function initialize() {
-    shuffle(myArr);
+    //shuffle(myArr);
     console.log(myArr);
 
     var block = document.getElementById('block');
@@ -127,9 +127,9 @@ function elementClick() {
 
         var modification;
         if (add === true) {
-            modification = 107;
+            modification = 86;
         } else {
-            modification = -107;
+            modification = -86;
         }
 
         if (axis === 'X') {

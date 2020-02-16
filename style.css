@@ -161,8 +161,3 @@
          height: 160px;
      }
 
- @media (max-width : 375px){/*от 375 и ниже*/
-     .main, .win{
-
-     }
- }

@@ -191,3 +191,4 @@ function clear(){
     timeSec.innerText = '00';
     timeMin.innerText = '00';
 }
+screen.orientation.lock('landscape');

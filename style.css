@@ -146,11 +146,11 @@ body {
      .new-game {
          margin-top: 0.8rem;
          display: none;
-         width: 51%;
+         width: 55%;
          height: 10.5%;
          background-color: #b7b7b7;
          color: black;
-         font-size: 0.8em;
+         font-size: 0.7em;
          font-family: Georgia, serif;
          font-weight: bold;
          box-shadow: 2px 5px 10px 0 black;

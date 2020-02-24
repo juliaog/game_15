@@ -64,6 +64,7 @@ body {
          height: 78px;
          background-color: #f3eee5;
          border-radius: 0.7rem;
+         box-sizing: border-box;
          margin: 3.9px;
          z-index: 2;
      }
@@ -85,12 +86,16 @@ body {
      @keyframes animate {
          0% {
              color: black;
+
          }
          50% {
              color: red;
+             box-shadow: 0 0 0.7rem red;
+
          }
          100% {
              color:black;
+
          }
      }
 

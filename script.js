@@ -12,6 +12,7 @@ var timeMin = document.getElementById("minutes");
 var minWin= document.getElementById('minutes-win');
 var secWin= document.getElementById('seconds-win');
 var courseWin = document.getElementById('result-win');
+
 initialize();
 
 function shuffle(arr) {
@@ -78,7 +79,7 @@ function getCurrentTranslate(element, axis) {
     }
 
     var value = translateString
-        .replace(/[^0-9,-]/g, '')
+        .replace(/[^0-9,-.]/g, '')
         .split(',')
     ;
 
@@ -97,9 +98,9 @@ function elementClick() {
     if (movable.indexOf(positionKnow) === -1) {
         console.log('Перемещение невозможно!');
         var el = this;
-        el.classList.add("shake");
+        el.classList.add("animate");
         setTimeout(function () {
-            el.classList.remove("shake");
+            el.classList.remove("animate");
         }, 500);
     } else {
         var axis, add;
@@ -125,12 +126,13 @@ function elementClick() {
         var currentTranslateX = getCurrentTranslate(this, 'X');
         var currentTranslateY = getCurrentTranslate(this, 'Y');
 
-        var modification;
-        if (add === true) {
-            modification = 86;
-        } else {
-            modification = -86;
+        var modification = this.clientWidth * 1.1;
+        if (add !== true) {
+            modification *= -1;
         }
+
+        console.log(currentTranslateX, currentTranslateY);
+        console.log(modification, axis);
 
         if (axis === 'X') {
             currentTranslateX += modification;

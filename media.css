@@ -6,13 +6,23 @@
        font-size: 12px;
     }
     .main{
-        width: 291px;
+        width: 292px;
         height: 390px ;
     }
+    #block{
+        padding-left: 0.4rem;
+    }
+    .sell{
+          width: 62px;
+          height: 62px;
+          margin: 3.1px ;
+      }
     #win-block{
         width: 209px;
         height: 366.5px;
     }
+
+
     .giphy{
         width: 257px;
         height: 120px;

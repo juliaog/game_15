@@ -193,4 +193,3 @@ function clear(){
     timeSec.innerText = '00';
     timeMin.innerText = '00';
 }
-window.screen.orientation.lock('portrait');
